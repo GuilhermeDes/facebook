@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--CDN Font-->
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <!--CDN BULMA-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--Icone do site-->
+    <link rel="shortcut icon" href="img/logo-icone.png" type="image/x-png">
+    <title>Facebook - entre ou cadastre-se</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="texto">
+            <div class="text-container">
+                <img src="img/logo-facebook.png" width="48%" style="margin-bottom: 20px;">
+                <h2>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+            </div>
+        </div>
+        <div class="info">
+            <form class="forms">
+                <div class="input-fiuld">
+                    <input type="text" class="btn-info" id="email" placeholder="Email ou telefone">
+                </div>
+
+                <div class="input-fiuld">
+                    <input type="password" class="btn-info" id="passoword" placeholder="Senha">
+                </div>
+
+                <div class="input-fiuld">
+                    <button type="submit" class="btn-join">Entrar</button>
+                </div>
+                <p class="remeber"><a
+                        href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Esqueceu
+                        a senha?</a></p>
+                <hr class="linha">
+                <button type="button" class="btn-cadastro">Criar nova conta</button>
+            </form>
+            <p class="pag"><a href="#">Criar uma Página</a> para uma celebridade, uma marca ou uma empresa.</p>
+        </div>
+        <footer>
+            <div class="league">
+                <a>Português (Brasil)</a>
+                <a>English (US)</a>
+                <a>Español</a>
+                <a>Français (France)</a>
+                <a>Italiano</a>
+                <a>Deutsch</a>
+                <a>العربية</a>
+                <a> हिन्दी</a>
+                <a>中文(简体)</a>
+                <a> 日本語</a>
+            </div>
+            <div class="ferramentas">
+            </div>
+            <div class="copyright">Meta © 2022</div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    /*
+    const form = document.querySelector('.forms');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('formaulario enviado teste');
+    })
+    */
+    /*    form.querySelector('#email').addEventListener('keypress', function (event) {
+    
+            const email = document.querySelector('#email')
+            const classNameold = email.className;
+            email.setAttribute('class', classNameold + ' teste')
+    
+        })
+        */
+    form.querySelector('#email').addEventListener('keypress', function (event) {
+        const el = event.target.value;
+        console.log(el)
+    })
+
+    form.querySelector('#passoword').addEventListener('keypress', function (event) {
+        const el = event.target.value;
+        console.log(el)
+    })
+</script>
+
+</html>

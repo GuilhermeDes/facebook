@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Começo*/
+
+/*Alinhamento das divs principais*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: 'SF Pro Display', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SF Pro Display', sans-serif;
+    width: 26%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.texto h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 10%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    padding: 5%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+}
+
+.input-fiuld {
+    display: flex;
+    width: 100%;
+}
+
+.btn-info {
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    background-color: white;
+    padding: 6%;
+    width: 100%;
+    margin-bottom: 10px;
+    place-content: flex-end center;
+}
+
+.btn-join {
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.remeber {
+    font-size: 15px;
+    color: #1877f2;
+}
+
+.btn-cadastro {
+    color: white;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2%;
+    width: 50%;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.pag {
+    margin-top: 15px;
+}
+
+/*EFEITO DOS LINKS*/
+
+a:link {
+    text-decoration: none;
+    text-transform: none;
+    color: #1877f2;
+}
+
+a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: #1877f2;
+}
+
+a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: #1877f2;
+}
+
+
+.btn-info:active {
+    border: #1877f2 1.5px solid;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-info:focus {
+    border: #1877f2 1px solid;
+    outline: none;
+}
+
+.linha {
+    border: 1px solid #dadde1;
+    width: 100%;
+    height: 0.1px;
+}
+
+.btn-join:hover {
+    color: white;
+    background-color: #0d66da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+
+    background-color: #37a022;
+    cursor: pointer;
+}
+
+.btn-info::placeholder {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2%;
+
+}
